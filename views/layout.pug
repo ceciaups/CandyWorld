@@ -9,12 +9,13 @@ html
       link(rel="stylesheet", href="/styles.css")
   body
     header#header
-      h2#site-name Candy World
+      h2#site-name
+        a(href="/") Candy World
       nav#main-nav 
         ul
           each link in menu
             li 
-              a(href=link.path) #{link.name}
+              a.menu-link(href=link.path) #{link.name}
     main#main
       block main-content 
     footer#footer 

@@ -55,6 +55,9 @@ header {
   border-right: 1px solid #062315;
   padding: 0 0.7em;
 }
+#site-name a {
+  text-decoration: none;
+}
 #main-nav {
   display: flex;
   justify-content: center;
