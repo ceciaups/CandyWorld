@@ -1,0 +1,12 @@
+extends layout 
+
+block main-content 
+  h1.page-title We love Candy!
+  img.banner(src="https://www.daysoftheyear.com/wp-content/uploads/candy-day.jpg")
+
+  div.product-container
+    each candy in candies
+      div.product-item
+        img(src=candy.image)
+        p #{candy.name}
+        p $#{candy.price}

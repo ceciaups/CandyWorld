@@ -1,0 +1,159 @@
+/********************************************************************
+ * TABLE OF CONTENTS
+ * ===================
+ * 1. GENERAL STYLES
+ * 2. HEADER STYLES
+ * 3. PAGES STYLES
+ * 4. HOME STYLES
+ * 5. ABOUT STYLES
+ * 6. CANDY PAGE STYLES
+ * 7. FOOTER STYLES
+ * 8. MEDIA QUERIES
+ * ===================
+ ********************************************************************/
+
+/* 1. GENERAL STYLES */
+html {
+  box-sizing: border-box;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background-color: #FFF6EE;
+}
+*, *::before, *::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+a, a:link {
+  color: #F2A7A7;
+}
+a:visited {
+  color: #D95F75;
+}
+a:hover {
+  color: #F2808A;
+}
+a:active {
+  color: #F2949C;
+}
+
+/* 2. HEADER STYLES */
+header {
+  align-items: center;
+  display: flex;
+  flex-flow: row;
+  height: 60px;
+  background-color: #F2C1BD;
+}
+#site-name {
+  flex: 1;
+  text-align: center;
+  border-right: 1px solid #062315;
+  padding: 0 0.7em;
+}
+#main-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 2;
+  padding: 0 1em;
+}
+#main-nav ul {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+#main-nav li {
+  display: inline-block;
+  padding: 0 1em;
+}
+
+/* 3. PAGES STYLES */
+.page-title {
+  text-align: center;
+  padding: 0.5em 0;
+}
+
+/* 4. HOME STYLES */
+.home-title {
+  font-size: 4em;
+  padding: 1.5em 2em;
+  width: 100%;
+  height: 85vh;
+  min-height: 500px;
+  background: url("https://media.istockphoto.com/id/1179151873/photo/colorful-japanese-traditional-sweets.jpg?s=612x612&w=0&k=20&c=Ai-62Z6b6QqY6-vGm584PU1RlEk3jWwQxuDCyAk09do=") center center no-repeat;
+  background-size: cover;
+}
+
+/* 5. ABOUT STYLES */
+.about-banner {
+  width: 100%;
+  object-fit: cover;
+}.about-content {
+  padding: 0 1em;
+}
+
+/* 6. CANDY PAGE STYLES */
+.banner {
+  width: 100%;
+  height: 25vw;
+  object-fit: cover;
+}
+
+.product-container {
+  display: flex;
+  flex-flow: row wrap;
+}
+.product-item {
+  width: 23%;
+  margin: 1%;
+  background-color: #FBECE5;
+  padding-bottom: 8px;
+}
+.product-item img {
+  width: 100%;
+}
+.product-item h5, .product-item p {
+  padding: 0 8px;
+}
+
+/* 7. FOOTER STYLES */
+footer {
+  padding: 1em;
+}
+
+/* 8. MEDIA QUERIES */
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 12px;
+  }
+  header {
+    height: 45px;
+  }
+  .product-item {
+    width: 31%;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  body {
+    font-size: 12px;
+  }
+  header {
+    height: 45px;
+  }
+  #site-name {
+    font-size: 1.25em;
+  }
+  .home-title {
+    padding: 1em 1em;
+  }
+  .product-item {
+    width: 45%;
+    margin: 2.5%;
+  }
+}
